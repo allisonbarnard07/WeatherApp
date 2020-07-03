@@ -71,13 +71,13 @@ main {
 
 .current .weather {
     color: white;
-    font-size: 31px;
+    font-size: 28px;
     font-weight: 700;
     font-style: italic;
     margin-bottom: 15px;
 }
 
-.current .high-low {
+.current .windspeed {
     color: white;
     font-style: 25px;
     font-weight: 500;
