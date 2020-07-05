@@ -6,6 +6,8 @@ base: "https://api.openweathermap.org/data/2.5/"
 const search = document.querySelector('.search-box');
 search.addEventListener('keypress', setQuery);
 
+
+
 function setQuery(event) {
   if (event.keyCode == 13) {
     getResults(search.value);
@@ -25,10 +27,10 @@ console.log(weather);
 let city = document.querySelector('.location .city');
 city.innerText = `${weather.name}, ${weather.sys.country}`;
 
-
 let now = new Date ();
 let date = document.querySelector('.location .date');
 date.innerText = dateBuilder(now);
+console.log(date);
 
 let temp = document.querySelector('.current .temp');
 temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`;
@@ -36,9 +38,16 @@ temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`;
 let weatherEl = document.querySelector('.current .weather');
 weatherEl.innerText = weather.weather[0].main;
 
+let weatherIcon = document.querySelector('.current .icon');
+weatherIcon.innerHTML = "<img src='http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png'>";
+
+
+let humidity = document.querySelector('.current .humidity');
+humidity.innerHTML = "Humidity: " + weather.main.humidity + "%";
+
 
 let wind = document.querySelector('.current .windspeed');
-wind.innerText = weather.wind.speed + " mph";
+wind.innerText = "Wind Speed: " + weather.wind.speed + " mph";
 }
 function dateBuilder (db) {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -50,4 +59,7 @@ let day = days[db.getDay()];
   let year = db.getFullYear();
 
   return `${day} ${date} ${month} ${year}`;
+
+  
 }
+

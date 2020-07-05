@@ -82,3 +82,15 @@ main {
     font-style: 25px;
     font-weight: 500;
 }
+
+.current .humidity {
+    color: white;
+    font-style: 25px;
+    font-weight: 500;
+}
+
+.current .icon {
+    color: white;
+    font-style: 25px;
+    font-weight: 500;
+}
