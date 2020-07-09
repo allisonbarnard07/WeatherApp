@@ -6,6 +6,6 @@ Icons, Weather in °F, Wind, Humidity
 <br>
 The user's previous searches will be saved. They can add as many searches on as they would like and the app will store the previous weather searches.
 
-Live site: https://allisonbarnard07.github.io/WeatherApp/.
+Live site: https://allisonbarnard07.github.io/WeatherApp/
 
 Github: https://github.com/allisonbarnard07/WeatherApp
