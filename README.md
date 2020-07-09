@@ -8,4 +8,4 @@ The user's previous searches will be saved. They can add as many searches on as 
 
 Live site: https://allisonbarnard07.github.io/WeatherApp/.
 
-Github:
+Github: https://github.com/allisonbarnard07/WeatherApp
