@@ -5,3 +5,7 @@ Using HTML, CSS, JS, AJAX, and JQuery I built a weather app that will display th
 Icons, Weather in °F, Wind, Humidity
 <br>
 The user's previous searches will be saved. They can add as many searches on as they would like and the app will store the previous weather searches.
+
+Live site: https://allisonbarnard07.github.io/WeatherApp/.
+
+Github:
